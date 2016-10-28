@@ -74,6 +74,7 @@ $grid-base: 40
 	:height 450px
 	:background-color blue
 	:position relative
+	:margin-bottom 15.5%
 .box-with-after
 	&:after
 		:content ' '
@@ -85,7 +86,15 @@ $grid-base: 40
 		:right -10%
 		:bottom -10%
 		:z-index -10
-
+	&-reverse
+		:margin-left auto
+		&:after
+			:right 10%
+	&-upper
+		:margin-left auto
+		&:after
+			:right 10%
+			:top -10%
 =make-column($columns, $grid: $grid-base)
 	:box-sizing border-box
 	:width percentage($columns / $grid)
