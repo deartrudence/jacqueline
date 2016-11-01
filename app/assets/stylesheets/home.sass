@@ -276,6 +276,8 @@ $grid-base: 40
 		:list-style none
 		:padding 0
 		:padding-top 50px
+		li 
+			:margin-bottom 5px
 		a 
 			:color $red
 			:text-decoration none
@@ -316,44 +318,14 @@ h4
 a 
 	:transition 0.3s all ease	
 
-// .text-primary, .text-secondary 
-// 	:letter-spacing 0.4
-// 	:line-height 3.2rem
-// 	:font-size 1.85rem
-// 	:text-align center
-// 	:max-width 650px
-// 	:margin 0 auto
-// .text-primary
-// 	:font-family $hl-font
-// 	:font-style italic
-// h2.hl 
-// 	:color $pink
-// 	:font-weight bold	
-		
-// .button
-// 	:border none
-// 	:padding 10px 12px 8px 12px
-// 	:transition 0.3s all ease
-// 	:cursor pointer
-// 	:font-family $title-font
-// 	:font-size 1.6rem
-// 	:letter-spacing 1.2px
-// .button--primary
-// 	:border 2px solid $pink
-// 	:background $pink
-// 	:color white
-// .button--primary:hover
-// 	:background white
-// 	:color $pink			
-// // NAV
-// .logo-main
-// 	:width 240px
+
 nav 
-	:background $lightgrey
 	:padding 12px 0
 	// :position fixed
 	:width 100%
-	:z-index 10
+	:z-index 1000
+	img
+		:width 50px
 	.wrapper
 		+display-for(md sm xs)
 			:margin 0
@@ -363,6 +335,7 @@ nav
 		+display-for(md sm xs)
 			:width 80% !important		
 	.menu--main
+		:z-index 10000
 		+display-for(md sm xs)
 			:display none	
 	
@@ -372,9 +345,10 @@ nav
 		:margin 0
 		+display-for(md sm xs)
 			:position absolute
-			:background $lightgrey
+			:background white
 			:top 55px
 			:margin 0
+			:margin-top 10px
 			:padding 40px 0 20px
 			:width 100% !important
 			:left 0
@@ -383,10 +357,9 @@ nav
 			+display-for(md sm xs)
 				:width 100%
 				:text-align center	
-
 		a 
 			:text-decoration none
-			:color white
+			:color $red
 			:font-family $title-font
 			:text-transform uppercase
 			:letter-spacing 0.8px
@@ -414,7 +387,7 @@ nav
 				:content ' '
 				:width 32px
 				:height 2px
-				:background white
+				:background $red
 				:display block
 				:margin-top 6px
 				:transition all 0.3s
@@ -424,7 +397,7 @@ nav
 				:height 2px
 				:margin-top 6px
 				:display block
-				:background white
+				:background $red
 				:transition all 0.3s
 	.main--toggle.active
 		+display-for(md sm xs)
@@ -442,205 +415,7 @@ nav
 				:transform translate3d(0, -10px, 0) rotate(-45deg)
 				:width 22px
 				:height 2px
-			
 
-// HEADER
-// header 
-// 	// :background linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), image-url('video-img.png')
-// 	// :background-size cover
-// 	:color white
-// 	h2 
-// 		:text-align left
-// 		:margin 0 0 12px
-// 		:text-shadow 0px 0px 8px rgba(0,0,0,0.5)
-// 		+display-for(xs)
-// 			:margin-right 10px
-// 	.arrow
-// 		:display inline-block
-// 		:width 100%
-// 		:text-align center
-// 		:margin-bottom 80px
-// 		img 
-// 			:width 50px
-				
-// 	.wrapper 
-// 		:height 90vh
-// 		:position relative
-// 		+display-for(xs)
-// 			:height 80vh
-// 		.header--text
-// 			:position absolute
-// 			:bottom 70px
-// 			:right 0
-// 			+display-for(xs)
-// 				:width 100%
-// 				:text-align center
-
-// //ABOUT
-// .about 
-// 	:background-color white
-// 	.text-primary
-// 		:margin-bottom 140px
-// 		+display-for(xs)
-// 			:margin-bottom 80px
-// 	.col--two
-// 		&:nth-of-type(2n + 2)
-// 			:padding 0 30px
-// 			+display-for(xs)
-// 				:padding 0
-// 		&:nth-of-type(2n + 1)
-// 			+display-for(sm xs)
-// 				:height 200px 
-// 				:overflow hidden
-// 				:margin-bottom 22px	
-// 	.wrapper--flex	
-// 		:margin-bottom 60px
-// 		&:nth-of-type(2)
-// 			:flex-direction row-reverse
-// 			.col--two
-// 				&:nth-of-type(2n + 2)	
-// 					:padding-left 0
-// 					+display-for(sm)
-// 						:padding-left 20px
-// 					+display-for(xs)
-// 						:padding 0		
-
-// //PEOPLE
-// .people
-// 	:background $lightgrey
-// 	img 
-// 		:border-radius 50%
-// 		:width 70%
-// 		:display block
-// 		:margin 0 auto
-
-// 	.wrapper--flex
-// 		&:nth-of-type(1)
-// 			:margin-bottom 60px
-// 			.col--img
-// 				:padding-left 80px
-// 		&:nth-of-type(2)
-// 			:flex-direction row-reverse	
-// 			.col--img 
-// 				:padding-right 80px	
-// 		.col--img 
-// 			+display-for(sm xs)
-// 				:padding 0 !important
-// 				:margin 20px		
-
-// // SERVICES
-// .services 
-// 	:background-color white
-// 	h2 
-// 		:text-align center
-// 	h3 
-// 		:margin 0 0 18px 0
-// 		+display-for(xs)
-// 			:text-align center	
-// 	.text-secondary
-// 		:margin-bottom 80px	
-// 	i 
-// 		:height 60px
-// 		:width 60px
-// 		:border 2px solid $gold
-// 		:border-radius 50%
-// 		:text-align center
-// 		:line-height 60px
-// 		:font-size 20px	
-// 		:transition 0.3s all ease
-// 		:cursor pointer
-// 		+display-for(xs)
-// 			:margin 0 auto 20px
-// 	// i:hover
-// 	// 	:background $gold	
-// 	.wrapper--flex
-// 		:width 80%
-// 		:margin 0 auto 48px
-// 		p 
-// 			:color $darkgrey	
-// 		div 
-// 			:width calc(100% - 100px)
-// 			+display-for(xs)
-// 				:width 100%
-
-
-
-
-// //CONTACT
-// .contact 
-// 	:background-color white
-// 	:background $gold
-// 	:padding 0
-// 	.wrapper--flex
-// 		:align-items stretch
-// 	.contact--info 
-// 		:text-align center
-// 		:padding 80px 0
-// 		p
-// 			:margin 0 0 8px 0
-// 		div:first-of-type
-// 			:margin-bottom 30px
-// 	.contact--map
-// 		:background image-url('map-with-marker.png') center
-// 		:background-size cover	
-// 		:position relative
-// 		+display-for(sm xs)
-// 			:height 400px
-// 		a 
-// 			:position absolute
-// 			:top 0 
-// 			:left 0
-// 			:height 100%
-// 			:width 100%
-
-.request
-	:background-color white			
-	form, h2
-		:width 80%
-		:margin 0 auto
-	h2 
-		:margin-bottom 3.2rem	
-	form
-		input:-webkit-autofill
-			:-webkit-box-shadow 0 0 0px 1000px #f5e7bb inset
-		label	
-			:font-size 13px
-			:text-transform uppercase
-			:transition 0.3s all ease
-		textarea
-			:border 2px solid black
-			:width 100%
-		input[type=submit]
-			:float right
-		.comments-label 
-			:padding-left 6px
-			+display-for(sm xs)	
-				:padding-left 0	
-		.col--two	
-			:position relative
-			label
-				:position absolute
-				:top 0
-				:left 6px
-				+display-for(sm xs)
-					:left 0
-			input
-				:width 100%
-				:border none
-				:border-bottom 2px solid black
-				:padding 12px
-				:margin-bottom 20px
-		.col--two:nth-of-type(2n + 1)
-			:padding-right 10px	
-		.col--two:nth-of-type(2n + 2)		
-			:padding-left 10px
-			label
-				:left 16px
-				+display-for(sm xs)
-					:left 0
-		.col--two:nth-of-type(2n + 2), .col--two:nth-of-type(2n + 1)
-			+display-for(sm xs)
-				:padding 0
 //FOOTER
 footer
 	:background #F0EFEF
@@ -651,7 +426,7 @@ footer
 		:font-size 2.7rem
 		:color #EF0612
 		:margin 0
-	h3 
+	h3.title 
 		:font-size 1.7rem
 		:margin 0 0 12px
 		:text-transform uppercase
@@ -685,25 +460,7 @@ footer
 		:border-bottom 2px solid white
 		:margin-top 45px
 		:padding-bottom 45px	
-	// div 
-	// 	:width calc(80% - 110px)
-	// 	+display-for(sm xs)
-	// 		:width calc(100% - 110px)				
-	// div.social-links
-	// 	:width 20%	
-	// 	:text-align right
-	// 	+display-for(sm xs)
-	// 		:width calc(100% - 110px)
-	// 		:margin-left 110px
-	// 		:text-align left
-	// 	a 
-	// 		:color white
-	// 		:font-size 2rem
-	// 		:margin-right 16px
-	// 	a:hover 
-	// 		:color $pink	
-	// 	a:last-of-type
-	// 		:margin-right 0	
+
 			
 
 

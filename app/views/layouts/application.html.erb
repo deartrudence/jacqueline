@@ -14,9 +14,26 @@
 </head>
 <body>
 <div class="wrapper">
+	<nav>
+		<div class="wrapper--flex">
+			<a href="" >
+				<%= image_tag 'oval.png'%>
+			</a>
+			<a href="#" class="main--toggle">
+				<span></span>
+			</a>
+			<ul class="wrapper--flex col--two menu--main">
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Work</a></li>
+				<li><a href="">Workshops</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
 	<%= yield %>
 
-	<section class="wrapper--flex contact">
+	<section id="contact" class="wrapper--flex contact">
 		<div class="col--two"></div>
 		<div class="col--two">
 			<div class="subtitle">
@@ -60,11 +77,11 @@
 				<h3>the crazy plate lady</h3>
 			</div>
 			<div class="col--three">
-				<h3>get in touch</h3>
+				<h3 class="title">get in touch</h3>
 				<p><a href="#"><i class="fa fa-envelope-o"></i> me@jacquelinepoirier.com</a></p>
 				<p><a href="#"><i class="fa fa-twitter"></i> @thecrazyplatelady</a></p>
 
-				<h3>SOCIAL</h3>
+				<h3 class="title">SOCIAL</h3>
 				<ul class="social-icons">
 					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -72,7 +89,7 @@
 				</ul>
 			</div>
 			<div class="col--three">
-				<h3>menu</h3>
+				<h3 class="title">menu</h3>
 				<ul>
 					<li><a href="#">work</a></li>
 					<li><a href="#">about</a></li>
@@ -87,6 +104,73 @@
 			<p>SITE DESIGN BY <a href="http://sylvia.io/" target="_blank">SYLVIA.IO</a> & SITE DEV BY <a href="http://www.upatfive.ca/" target="_blank">UPATFIVE.CA</a></p>
 		</div>
 	</footer>
+
+	<script>
+		var windowSize = $(window).innerWidth();
+		(function($,sr){
+		  var debounce = function (func, threshold, execAsap) {
+		      var timeout;
+
+		      return function debounced () {
+		          var obj = this, args = arguments;
+		          function delayed () {
+		              if (!execAsap)
+		                  func.apply(obj, args);
+		              timeout = null;
+		          };
+
+		          if (timeout)
+		              clearTimeout(timeout);
+		          else if (execAsap)
+		              func.apply(obj, args);
+
+		          timeout = setTimeout(delayed, threshold || 100);
+		      };
+		  }
+		  // smartresize 
+		  jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+		})(jQuery,'smartresize');
+		
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+
+		$('.main--toggle').on('click', function(e){
+			e.preventDefault()
+			$(this).toggleClass('active');
+			$('.menu--main').slideToggle('normal')
+			$('.menu--main').hasClass('.active') ? $('.menu--main').removeClass('.active') : $('.menu--main').addClass('.active')
+		});
+
+		function mainMenuSmall(){
+			if(windowSize <= 959){
+				$('.menu--main').hasClass('.active') ? null : $('.menu--main').css('display', 'none')
+			} else {
+				$('.menu--main').css('display', 'flex').addClass('active')
+			}
+		}
+
+		var theWidth = $(window).width();
+		$(window).smartresize(function(){
+			if($(this).width() != theWidth){
+				windowSize = $(window).innerWidth()
+				mainMenuSmall()
+				theWidth = $(this).width()
+			}
+		});
+
+		mainMenuSmall()
+	</script>
 
 </body>
 </html>
