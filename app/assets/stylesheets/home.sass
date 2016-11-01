@@ -11,90 +11,13 @@ body
 	:font-family $body-font	
 	:font-size 1.5rem
 	:line-height 2.6rem
+	:letter-spacing 1.5px
 	:margin 0
 img 
 	:width 100%
 //grid columns
 $grid-base: 40
 
-.text-right
-	:text-align right
-.subtitle
-	:border-bottom 3px solid black
-	:margin-bottom 10px
-	h2
-		:margin-bottom 10px
-.home-plates
-	:min-height 500px
-
-.box-header
-	:height 400px
-	:background-color grey
-	:position relative
-	&:before
-		:content ' '
-		:position absolute
-		:z-index 1
-		:top 40px
-		:left 40px
-		:right 40px
-		:bottom 40px
-		:border 5px solid white
-	.tagline
-		:position absolute
-		:text-transform uppercase
-		:left 50%
-		:top 26px
-		:transform translate(-50%, -50%)
-		:padding 0 20px
-		:color white
-		:background-color grey
-		:z-index 10
-.box
-	// :width 49%
-	:height 100px
-	:margin-bottom 5.5%
-	:padding 10px
-	:background-color green
-.box1
-	:height 560px
-.box2
-	:height 400px
-.box3 
-	:height 350px
-.box4
-	:height 430px
-.box5
-	:height 300px
-.box6 
-	:height 600px
-
-.box-with-after
-	:max-width 90%
-	:height 450px
-	:background-color blue
-	:position relative
-	:margin-bottom 15.5%
-.box-with-after
-	&:after
-		:content ' '
-		:display block
-		:height 100%
-		:width 100%
-		:border 3px solid grey
-		:position absolute
-		:right -10%
-		:bottom -10%
-		:z-index -10
-	&-reverse
-		:margin-left auto
-		&:after
-			:right 10%
-	&-upper
-		:margin-left auto
-		&:after
-			:right 10%
-			:top -10%
 =make-column($columns, $grid: $grid-base)
 	:box-sizing border-box
 	:width percentage($columns / $grid)
@@ -196,8 +119,143 @@ $grid-base: 40
 			+display-for(sm)
 				+make-column(13.33)
 			+display-for(xs)
-				+make-column(20)				
+				+make-column(20)
 
+
+.plates, .biography, .workshops, .press
+	:margin-top 5%
+
+.text-right
+	:text-align right
+.subtitle
+	:margin-bottom 10px
+	h2
+		:border-bottom 3px solid black
+		:padding-bottom 20px
+		:margin-bottom 0
+		:font-size 5rem
+	h3
+		:font-size 2.5rem
+		:margin 20px 0
+		:color #999
+.subtitle-sub
+	h3
+		:font-size 3.5rem
+		:color black
+		:padding 20px 0
+		:border-bottom 3px solid black	
+.subtitle, .subtitle-sub
+	h3
+		:letter-spacing 1.7px
+.home-plates
+	:min-height 500px
+
+.box-header
+	:height 550px
+	:background-color #f3f3f3
+	:position relative
+	&:before
+		:content ' '
+		:position absolute
+		:z-index 1
+		:top 40px
+		:left 40px
+		:right 40px
+		:bottom 40px
+		:border 5px solid white
+	.tagline
+		:position absolute
+		:text-transform uppercase
+		:left 50%
+		:top 26px
+		:transform translate(-50%, -50%)
+		:padding 0 20px
+		:color white
+		:background-color #f3f3f3
+		:z-index 10
+	img
+		:position absolute
+		:z-index 100
+		:top 5%
+.plate
+	// :width 49%
+	// :height 100px
+	:margin-bottom 5.5%
+	// :padding 10px
+	// :background-color green
+.box1
+	// :height 560px
+	:width 90%
+	:background-color mistyrose
+.box2
+	// :height 400px
+	:width 90%
+	:background-color mistyrose
+// .box3 
+// 	:height 350px
+// .box4
+// 	:height 430px
+// .box5
+// 	:height 300px
+// .box6 
+// 	:height 600px
+
+.box-with-after
+	:max-width 90%
+	// :height 450px
+	// :background-color blue
+	:position relative
+	:margin-bottom 15.5%
+.box-with-after
+	&:after
+		:content ' '
+		:display block
+		:height 100%
+		:width 100%
+		:border 3px solid grey
+		:position absolute
+		:right -10%
+		:bottom -10%
+		:z-index -10
+	&-reverse
+		:margin-left auto
+		:margin-bottom 15.5%
+		&:after
+			:right 10%
+	&-upper
+		:margin-left auto
+		&:after
+			:right 10%
+			:top -10%
+.workshop
+	.col--two
+		:padding 10px 0 10px 40px
+		+display-for(sm xs)
+			:padding 10px 40px
+		h2
+			:border-bottom 2px solid grey
+			:margin-bottom 0
+			:padding-bottom 10px
+		h3
+			:margin-top 10px
+	p 
+		:padding 0 40px 40px 40px
+		:font-size 25px
+		:letter-spacing 1.5px
+		:line-height 1.3
+		:color #999
+	.img1
+		:margin-bottom 20px
+	.img2
+		:margin-top 20px
+.press
+	p 
+		:padding 0 40px 40px 40px
+		:font-size 25px
+		:letter-spacing 1.5px
+		:line-height 1.3
+		:color #999				
+// ===================================
 section
 	:padding 140px 0	
 	+display-for(sm xs)

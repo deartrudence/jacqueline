@@ -2,116 +2,134 @@
 	this is home
 	<div class="box-header">
 		<p class="tagline">The Crazy Plate Lady</p>
+		<%= image_tag 'handlettering.png'%>
 	</div>
 
-	<div class="wrapper--flex">
+	<div class="wrapper--flex plates">
 		<div class="col--two">
 			
 		</div>
 		<div class="col--two">
 			<div class="subtitle">
 				<h2 class="text-right">Plates</h2>
+				<h3>Featured Work</h3>
 			</div>
-			<h3>Featured Work</h3>
 		</div>
 	<!-- </div> -->
 
 	<!-- <div class="wrapper--flex"> -->
 		<div class="col--two">
-		  <div class="box box1">1</div>
-		  <div class="box box2">2</div>
-		  <div class="box box3">3</div>
+		  <%= image_tag 'art_02', class: 'plate'%>
+		  <%= image_tag 'art_06', class: 'plate'%>
+		  <%= image_tag 'art_07', class: 'plate'%>
 		</div>
 		<div class="col--two">
-		  <div class="box box4">4</div>
-		  <div class="box box5">5</div>
-		  <div class="box box6">6</div>
+		  <%= image_tag 'art_01', class: 'plate'%>
+		  <%= image_tag 'art_03', class: 'plate'%>
+		  <%= image_tag 'art_05', class: 'plate'%>
 		</div>
 	</div>
 
-	<div class="wrapper--flex">
+	<div class="wrapper--flex biography">
 		<div class="col--two">
 			<div class="subtitle">
 				<h2>Biography</h2>
+				<h3 class="text-right">About Me</h3>
 			</div>
-			<h3 class="text-right">About Me</h3>
 		</div>
 		<div class="col--two">
 		</div>
 		<div class="col--two">
-			<div class="box-with-after"></div>
+			<div class="box-with-after"><%= image_tag 'portrait.jpg'%></div> 
 		</div>
 		<div class="col--two">
+			<h2>Jacqueline Poirier</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel cum, quos, aperiam temporibus distinctio unde dolorem in quam ducimus blanditiis non modi nulla quo, numquam nobis dignissimos obcaecati enim sint.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quaerat provident, laudantium quo optio omnis hic exercitationem molestias quia nam maxime nemo laborum quasi molestiae, ducimus. Praesentium animi assumenda totam molestiae, officiis voluptas nihil commodi quas quaerat quibusdam, dolores itaque repudiandae ipsum veniam, cupiditate sequi.</p>
 		</div>
 	</div>
 
-	<div class="wrapper--flex">
+	<div class="wrapper--flex workshops">
 		<div class="col--two">
 			
 		</div>
 		<div class="col--two">
 			<div class="subtitle">
 				<h2 class="text-right">Workshops</h2>
+				<h3>upcoming workshops</h3>
 			</div>
-			<h3>upcomming workshops</h3>
 		</div>
-		<div class="col--two">
-		  <div class="box box1">1</div>
-		  <div class="box-with-after">2</div>
+		<div class="col--two workshop">
+		  <%= image_tag 'paint_04.jpg', class: 'img1'%>
+		  <div class="box-with-after box2">
+		  	<div class="col--two">
+			  	<h2>JAN</h2>
+			  	<h3 class="text-right">25/17</h3>
+		  	</div>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda modi aliquam rerum at iusto esse.</p>
+		  </div>
 		</div>
-		<div class="col--two">
-		  <div class="box-with-after box-with-after-reverse">4</div>
-		  <div class="box box4">5</div>
+		<div class="col--two workshop">
+		  <div class="box-with-after box-with-after-reverse box1">
+		  	<div class="col--two">
+		  		<h2>FEB</h2>
+		  		<h3 class="text-right">07/17</h3>
+		  	</div>
+	  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aperiam modi quidem animi beatae eveniet atque, laborum dolore tempora, iste quia.</p>
+		  </div>
+		  <%= image_tag 'paint_02.jpg', class: 'img2'%>
 		</div>
 	</div>
 
-	<div class="wrapper--flex">
+	<div class="wrapper--flex press">
 		<div class="col--two">
 			<div class="subtitle">
 				<h2>Press</h2>
+				<h3 class="text-right">Most Recent Press</h3>
 			</div>
-			<h3 class="text-right">Most Recent Press</h3>
 		</div>
 		<div class="col--two">
 		</div>
-		<div class="wrapper--flex-reverse">
+		<div class="wrapper--flex-reverse press">
 			<div class="col--two">
-				<div class="subtitle">
-					<h3 class="text-right">Notable</h3>
+				<div class="subtitle-sub">
+					<h3 class="text-right">Notable Awards</h3>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia quo, veritatis repellat perspiciatis ullam vero eum minus, tempora molestias reiciendis excepturi suscipit aut nisi!</p>
 			</div>
 			<div class="col--two">
-				<div class="box-with-after box-with-after-reverse">notable</div>
+				<div class="box-with-after box-with-after-reverse"><%= image_tag 'notable-winner.jpg'%></div>
 			</div>
 			
 		</div>	
-		<div class="wrapper--flex">
+		<div class="wrapper--flex press">
 			
 			<div class="col--two">
-				<div class="subtitle">
+				<div class="subtitle-sub">
 					<h3>Morgan Freeman</h3>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium sint quia aliquid deserunt molestiae ipsum quam, quasi autem eum porro ratione sit exercitationem, delectus!</p>
 			</div>
 			<div class="col--two">
-				<div class="box-with-after box-with-after-upper">morgan</div>
+				<div class="box-with-after box-with-after-upper"><%= image_tag 'morganfreeman.jpg'%></div>
 			</div>
 		</div>
 
 		<div class="wrapper--flex-reverse">
 			<div class="col--two">
-				<div class="subtitle">
+				<div class="subtitle-sub">
 					<h3 class="text-right">The Chic Canuck</h3>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia quo, veritatis repellat perspiciatis ullam vero eum minus, tempora molestias reiciendis excepturi suscipit aut nisi!</p>
 			</div>
 			<div class="col--two">
-				<div class="box-with-after box-with-after-reverse">canuck</div>
+				<div class="box-with-after box-with-after-reverse"><%= image_tag 'press2.jpg'%></div>
 			</div>	
 			
 		</div>
 
 </div>
+
+<script>
+	$('.box-with-after').after('<img src="<%= image_url('portrait.jpg') %>"')
+</script>
