@@ -119,7 +119,7 @@ $grid-base: 40
 
 html
 	:font-size 10px
-	+display-for(sm xs)
+	+display-for(md sm xs)
 		:font-size 8px
 	:box-sizing border-box
 *, *:before, *:after
@@ -133,13 +133,17 @@ body
 img 
 	:width 100%
 
-.plates, .biography, .workshops, .press
+.plates
 	:margin-top 4%
+.biography, .workshops, .press, .contact
+	// :margin-top 3%
 
 .text-right
 	:text-align right
 .subtitle
 	:margin-bottom 65px
+	+display-for(sm xs)
+		:margin-bottom 15px
 	h2
 		:border-bottom 3px solid $darkgrey
 		:padding-bottom 20px
