@@ -7,12 +7,86 @@
   <%= csrf_meta_tags %>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script src="https://use.fontawesome.com/1a8a67484c.js"></script>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 </head>
 <body>
+<div class="wrapper">
+	<%= yield %>
 
-<%= yield %>
+	<section class="wrapper--flex contact">
+		<div class="col--two"></div>
+		<div class="col--two">
+			<div class="subtitle">
+				<h2 class="text-right">Contact</h2>
+				<h3>order custom plates</h3>
+			</div>
+		</div>
+		<div class="col--two">
+			<h3 class="area">Get in Touch</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate odio aperiam quibusdam, est sit expedita.</p>
+			<ul>
+				<li><a href="#"><i class="fa fa-envelope-o"></i> info@crazyplatelady.com</a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i> @thecrazyplatelady</a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i> @thecrazyplatelady</a></li>
+			</ul>
+		</div>
+		<div class="col--two">
+			<h3 class="area">Say Something</h3>
+			<form action="email" class="contactForm">
+				<div class="contactNameWrapper">
+					<input type="text" name="name" class="contactName" placeholder="name" >
+				</div>
+				<div class="contactEmailWrapper">
+					<input type="email" name="email" class="contactEmail" placeholder="email" >
+				</div>
+
+				<div class="contactDescriptionWrapper">
+					<textarea name="description" height="300px" placeholder="your message"></textarea>
+				</div>
+				<div class="submitButtonWrapper">
+					<input type="submit" value="Send Email" class="submitButton">
+				</div>
+			</form>
+		</div>
+	</section>
+</div>
+	<footer>
+		<div class="wrapper wrapper--flex main-area">
+			<div class="col--three">
+				<h2>Jacqueline Poirier</h2>
+				<h3>the crazy plate lady</h3>
+			</div>
+			<div class="col--three">
+				<h3>get in touch</h3>
+				<p><a href="#"><i class="fa fa-envelope-o"></i> me@jacquelinepoirier.com</a></p>
+				<p><a href="#"><i class="fa fa-twitter"></i> @thecrazyplatelady</a></p>
+
+				<h3>SOCIAL</h3>
+				<ul class="social-icons">
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				</ul>
+			</div>
+			<div class="col--three">
+				<h3>menu</h3>
+				<ul>
+					<li><a href="#">work</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">press</a></li>
+					<li><a href="#">workshops</a></li>
+					<li><a href="#">contacts</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrapper credits">
+			<p>C 2017 CRAZY PLATE LADY</p>
+			<p>SITE DESIGN BY <a href="http://sylvia.io/" target="_blank">SYLVIA.IO</a> & SITE DEV BY <a href="http://www.upatfive.ca/" target="_blank">UPATFIVE.CA</a></p>
+		</div>
+	</footer>
 
 </body>
 </html>

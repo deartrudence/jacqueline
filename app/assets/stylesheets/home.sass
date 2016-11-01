@@ -9,9 +9,9 @@ html
 	:box-sizing inherit	
 body
 	:font-family $body-font	
-	:font-size 1.5rem
-	:line-height 2.6rem
-	:letter-spacing 1.5px
+	:font-size 1.7rem
+	:line-height 1.7
+	:letter-spacing 2.5px
 	:margin 0
 img 
 	:width 100%
@@ -105,6 +105,14 @@ $grid-base: 40
 		&--two
 			+make-column(19.4)
 			+display-for(sm xs)
+				+make-column(40)
+		&--two-no-margin
+			+make-column(20)
+			+display-for(sm xs)
+				+make-column(40)
+		&--three
+			+make-column(13)
+			+display-for(sm xs)
 				+make-column(40)	
 		&--four
 			+make-column(10)
@@ -123,27 +131,27 @@ $grid-base: 40
 
 
 .plates, .biography, .workshops, .press
-	:margin-top 5%
+	:margin-top 4%
 
 .text-right
 	:text-align right
 .subtitle
-	:margin-bottom 10px
+	:margin-bottom 65px
 	h2
-		:border-bottom 3px solid black
+		:border-bottom 3px solid $darkgrey
 		:padding-bottom 20px
 		:margin-bottom 0
-		:font-size 5rem
+		:font-size 60px
 	h3
-		:font-size 2.5rem
+		:font-size 24px
 		:margin 20px 0
-		:color #999
+		:color $lightgrey
 .subtitle-sub
 	h3
 		:font-size 3.5rem
-		:color black
+		// :color black
 		:padding 20px 0
-		:border-bottom 3px solid black	
+		:border-bottom 2px solid $darkgrey	
 .subtitle, .subtitle-sub
 	h3
 		:letter-spacing 1.7px
@@ -178,32 +186,13 @@ $grid-base: 40
 		:z-index 100
 		:top 5%
 .plate
-	// :width 49%
-	// :height 100px
 	:margin-bottom 5.5%
-	// :padding 10px
-	// :background-color green
-.box1
-	// :height 560px
+.event-box
 	:width 90%
-	:background-color mistyrose
-.box2
-	// :height 400px
-	:width 90%
-	:background-color mistyrose
-// .box3 
-// 	:height 350px
-// .box4
-// 	:height 430px
-// .box5
-// 	:height 300px
-// .box6 
-// 	:height 600px
+	:background-color $pink
 
 .box-with-after
 	:max-width 90%
-	// :height 450px
-	// :background-color blue
 	:position relative
 	:margin-bottom 15.5%
 .box-with-after
@@ -212,7 +201,7 @@ $grid-base: 40
 		:display block
 		:height 100%
 		:width 100%
-		:border 3px solid grey
+		:border 2px solid $lightgrey2
 		:position absolute
 		:right -10%
 		:bottom -10%
@@ -227,39 +216,83 @@ $grid-base: 40
 		&:after
 			:right 10%
 			:top -10%
+	&-pink
+		&:after
+			:border 3px solid $pink
+
+//BIOGRAPHY
+.biography
+	h2.jax
+		:font-size 71px
+		:line-height 1.1
+		:letter-spacing 5px
+		:margin-bottom 10px
+	p 
+		:font-size 20px
+		:letter-spacing 1.5px
+
+//WORKSHOPS
 .workshop
-	.col--two
+	.col--two-no-margin
 		:padding 10px 0 10px 40px
 		+display-for(sm xs)
 			:padding 10px 40px
 		h2
-			:border-bottom 2px solid grey
+			:color $darkgrey2
+			:border-bottom 3px solid $lightgrey2
 			:margin-bottom 0
 			:padding-bottom 10px
+			:font-size 43px
 		h3
+			:color $darkgrey2
 			:margin-top 10px
+			:font-size 25px
 	p 
 		:padding 0 40px 40px 40px
-		:font-size 25px
-		:letter-spacing 1.5px
-		:line-height 1.3
-		:color #999
+		:font-size 27px
+		:color $darkgrey2
 	.img1
 		:margin-bottom 20px
 	.img2
 		:margin-top 20px
+
+//PRESS
 .press
 	p 
 		:padding 0 40px 40px 40px
 		:font-size 25px
 		:letter-spacing 1.5px
 		:line-height 1.3
-		:color #999				
+		:color $darkgrey2	
+
+//CONTACT
+.contact
+	h3.area
+		:font-size 2.7rem	
+		:text-transform uppercase
+	p 
+		:padding-right 60px
+	ul
+		:list-style none
+		:padding 0
+		:padding-top 50px
+		a 
+			:color $red
+			:text-decoration none
+			:font-weight bold
+
+	input, textarea
+		:width 100%	
+		:padding 15px
+		:border 3px solid $pink
+		:margin-bottom 27px
+	.submitButton
+		:margin-bottom 0
 // ===================================
-section
-	:padding 140px 0	
-	+display-for(sm xs)
-		:padding 80px 0				
+// section
+// 	:padding 140px 0	
+// 	+display-for(sm xs)
+// 		:padding 80px 0				
 
 //fonts stuff			
 h2, h3, h4 
@@ -283,40 +316,40 @@ h4
 a 
 	:transition 0.3s all ease	
 
-.text-primary, .text-secondary 
-	:letter-spacing 0.4
-	:line-height 3.2rem
-	:font-size 1.85rem
-	:text-align center
-	:max-width 650px
-	:margin 0 auto
-.text-primary
-	:font-family $hl-font
-	:font-style italic
-h2.hl 
-	:color $gold
-	:font-weight bold	
+// .text-primary, .text-secondary 
+// 	:letter-spacing 0.4
+// 	:line-height 3.2rem
+// 	:font-size 1.85rem
+// 	:text-align center
+// 	:max-width 650px
+// 	:margin 0 auto
+// .text-primary
+// 	:font-family $hl-font
+// 	:font-style italic
+// h2.hl 
+// 	:color $pink
+// 	:font-weight bold	
 		
-.button
-	:border none
-	:padding 10px 12px 8px 12px
-	:transition 0.3s all ease
-	:cursor pointer
-	:font-family $title-font
-	:font-size 1.6rem
-	:letter-spacing 1.2px
-.button--primary
-	:border 2px solid $gold
-	:background $gold
-	:color white
-.button--primary:hover
-	:background white
-	:color $gold			
-// NAV
-.logo-main
-	:width 240px
+// .button
+// 	:border none
+// 	:padding 10px 12px 8px 12px
+// 	:transition 0.3s all ease
+// 	:cursor pointer
+// 	:font-family $title-font
+// 	:font-size 1.6rem
+// 	:letter-spacing 1.2px
+// .button--primary
+// 	:border 2px solid $pink
+// 	:background $pink
+// 	:color white
+// .button--primary:hover
+// 	:background white
+// 	:color $pink			
+// // NAV
+// .logo-main
+// 	:width 240px
 nav 
-	:background $purple
+	:background $lightgrey
 	:padding 12px 0
 	// :position fixed
 	:width 100%
@@ -339,7 +372,7 @@ nav
 		:margin 0
 		+display-for(md sm xs)
 			:position absolute
-			:background $purple
+			:background $lightgrey
 			:top 55px
 			:margin 0
 			:padding 40px 0 20px
@@ -361,9 +394,9 @@ nav
 				:padding 20px
 				:display block
 		a:hover 
-			:color $gold
+			:color $pink
 			+display-for(md sm xs)
-				:background $gold
+				:background $pink
 				:color white
 	.main--toggle
 		:display none
@@ -409,334 +442,156 @@ nav
 				:transform translate3d(0, -10px, 0) rotate(-45deg)
 				:width 22px
 				:height 2px
-
-.video-container 
-	:text-align center
-	:background rgba(0,0,0,0.25)
-	:padding 40px 0 40px 0
-	:overflow hidden
-	:background-size cover
-	:background-position center
-	:background-attachment fixed
-	+display-for(xs sm)
-		:padding 80px 0 40px 0
-
-	video
-		:position fixed
-		:top 50%
-		:left 50%
-		:min-width 100%
-		:z-index -10
-		:min-height 100%
-		:width auto
-		:height auto
-		:transform translate(-50%, -50%)
-		:background-size cover
-		:transition 1s opacity			
+			
 
 // HEADER
-header 
-	// :background linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), image-url('video-img.png')
-	// :background-size cover
-	:color white
-	h2 
-		:text-align left
-		:margin 0 0 12px
-		:text-shadow 0px 0px 8px rgba(0,0,0,0.5)
-		+display-for(xs)
-			:margin-right 10px
-	.arrow
-		:display inline-block
-		:width 100%
-		:text-align center
-		:margin-bottom 80px
-		img 
-			:width 50px
+// header 
+// 	// :background linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), image-url('video-img.png')
+// 	// :background-size cover
+// 	:color white
+// 	h2 
+// 		:text-align left
+// 		:margin 0 0 12px
+// 		:text-shadow 0px 0px 8px rgba(0,0,0,0.5)
+// 		+display-for(xs)
+// 			:margin-right 10px
+// 	.arrow
+// 		:display inline-block
+// 		:width 100%
+// 		:text-align center
+// 		:margin-bottom 80px
+// 		img 
+// 			:width 50px
 				
-	.wrapper 
-		:height 90vh
-		:position relative
-		+display-for(xs)
-			:height 80vh
-		.header--text
-			:position absolute
-			:bottom 70px
-			:right 0
-			+display-for(xs)
-				:width 100%
-				:text-align center
+// 	.wrapper 
+// 		:height 90vh
+// 		:position relative
+// 		+display-for(xs)
+// 			:height 80vh
+// 		.header--text
+// 			:position absolute
+// 			:bottom 70px
+// 			:right 0
+// 			+display-for(xs)
+// 				:width 100%
+// 				:text-align center
 
-//ABOUT
-.about 
-	:background-color white
-	.text-primary
-		:margin-bottom 140px
-		+display-for(xs)
-			:margin-bottom 80px
-	.col--two
-		&:nth-of-type(2n + 2)
-			:padding 0 30px
-			+display-for(xs)
-				:padding 0
-		&:nth-of-type(2n + 1)
-			+display-for(sm xs)
-				:height 200px 
-				:overflow hidden
-				:margin-bottom 22px	
-	.wrapper--flex	
-		:margin-bottom 60px
-		&:nth-of-type(2)
-			:flex-direction row-reverse
-			.col--two
-				&:nth-of-type(2n + 2)	
-					:padding-left 0
-					+display-for(sm)
-						:padding-left 20px
-					+display-for(xs)
-						:padding 0		
+// //ABOUT
+// .about 
+// 	:background-color white
+// 	.text-primary
+// 		:margin-bottom 140px
+// 		+display-for(xs)
+// 			:margin-bottom 80px
+// 	.col--two
+// 		&:nth-of-type(2n + 2)
+// 			:padding 0 30px
+// 			+display-for(xs)
+// 				:padding 0
+// 		&:nth-of-type(2n + 1)
+// 			+display-for(sm xs)
+// 				:height 200px 
+// 				:overflow hidden
+// 				:margin-bottom 22px	
+// 	.wrapper--flex	
+// 		:margin-bottom 60px
+// 		&:nth-of-type(2)
+// 			:flex-direction row-reverse
+// 			.col--two
+// 				&:nth-of-type(2n + 2)	
+// 					:padding-left 0
+// 					+display-for(sm)
+// 						:padding-left 20px
+// 					+display-for(xs)
+// 						:padding 0		
 
-//PEOPLE
-.people
-	:background $lightgrey
-	img 
-		:border-radius 50%
-		:width 70%
-		:display block
-		:margin 0 auto
+// //PEOPLE
+// .people
+// 	:background $lightgrey
+// 	img 
+// 		:border-radius 50%
+// 		:width 70%
+// 		:display block
+// 		:margin 0 auto
 
-	.wrapper--flex
-		&:nth-of-type(1)
-			:margin-bottom 60px
-			.col--img
-				:padding-left 80px
-		&:nth-of-type(2)
-			:flex-direction row-reverse	
-			.col--img 
-				:padding-right 80px	
-		.col--img 
-			+display-for(sm xs)
-				:padding 0 !important
-				:margin 20px		
+// 	.wrapper--flex
+// 		&:nth-of-type(1)
+// 			:margin-bottom 60px
+// 			.col--img
+// 				:padding-left 80px
+// 		&:nth-of-type(2)
+// 			:flex-direction row-reverse	
+// 			.col--img 
+// 				:padding-right 80px	
+// 		.col--img 
+// 			+display-for(sm xs)
+// 				:padding 0 !important
+// 				:margin 20px		
 
-// SERVICES
-.services 
-	:background-color white
-	h2 
-		:text-align center
-	h3 
-		:margin 0 0 18px 0
-		+display-for(xs)
-			:text-align center	
-	.text-secondary
-		:margin-bottom 80px	
-	i 
-		:height 60px
-		:width 60px
-		:border 2px solid $gold
-		:border-radius 50%
-		:text-align center
-		:line-height 60px
-		:font-size 20px	
-		:transition 0.3s all ease
-		:cursor pointer
-		+display-for(xs)
-			:margin 0 auto 20px
-	// i:hover
-	// 	:background $gold	
-	.wrapper--flex
-		:width 80%
-		:margin 0 auto 48px
-		p 
-			:color $darkgrey	
-		div 
-			:width calc(100% - 100px)
-			+display-for(xs)
-				:width 100%
-//SOCIAL
-section.social 
-	:padding 0
-	:background-color #0B0B0B
-.social-element
-	:position relative
-	:justify-content center
-	&:nth-of-type(2n+5)
-		:background-color $lightgold
-	&:nth-of-type(8n+1)
-		:background-color $gold
-	&:nth-of-type(3)
-		:background-color $darkgold
-	&:nth-of-type(6)
-		:order 7
-	&:nth-of-type(7)
-		:order 6
-	&:nth-of-type(8)
-		:order 9
-	&:nth-of-type(9)
-		:order 8
-	&:after
-		:content ""
-		:display block
-		:padding-bottom 100%
-	+display-for(md sm)
-		&:nth-of-type(1)
-			:order 1
-		&:nth-of-type(2)
-			:order 2
-		&:nth-of-type(3)
-			:order 3
-		&:nth-of-type(4)
-			:order 4
-		&:nth-of-type(5)
-			:order 5
-		&:nth-of-type(6)
-			:order 6
-		&:nth-of-type(7)
-			:order 7
-		&:nth-of-type(8)
-			:order 8
-		&:nth-of-type(9)
-			:order 9	
-		&:nth-of-type(10)
-			:display none
+// // SERVICES
+// .services 
+// 	:background-color white
+// 	h2 
+// 		:text-align center
+// 	h3 
+// 		:margin 0 0 18px 0
+// 		+display-for(xs)
+// 			:text-align center	
+// 	.text-secondary
+// 		:margin-bottom 80px	
+// 	i 
+// 		:height 60px
+// 		:width 60px
+// 		:border 2px solid $gold
+// 		:border-radius 50%
+// 		:text-align center
+// 		:line-height 60px
+// 		:font-size 20px	
+// 		:transition 0.3s all ease
+// 		:cursor pointer
+// 		+display-for(xs)
+// 			:margin 0 auto 20px
+// 	// i:hover
+// 	// 	:background $gold	
+// 	.wrapper--flex
+// 		:width 80%
+// 		:margin 0 auto 48px
+// 		p 
+// 			:color $darkgrey	
+// 		div 
+// 			:width calc(100% - 100px)
+// 			+display-for(xs)
+// 				:width 100%
 
-	+display-for(xs)
-		&:nth-of-type(1)
-			:order 1
-		&:nth-of-type(2)
-			:order 2
-		&:nth-of-type(3)
-			:order 4
-		&:nth-of-type(4)
-			:order 3
-		&:nth-of-type(5)
-			:order 5
-		&:nth-of-type(6)
-			:order 6
-		&:nth-of-type(7)
-			:order 8
-		&:nth-of-type(8)
-			:order 7
-		&:nth-of-type(9)
-			:order 9
-		&:nth-of-type(10)
-			:order 10		
-.social-element.col--four
-	+display-for(xs)
-		:width 50% !important			
-.instagram
-	:position absolute
-	:height 100%
-	:width 100%
-	:background-size contain
-	:background-repeat no-repeat
-	:background-position center
-.wrapper--flex.tweet-flex
-	:flex-wrap wrap
-.tweet
-	:display flex
-	:position absolute
-	:padding 0 20px
-	:height 80%
-	// :overflow scroll
-	:margin auto
-	:top 0 
-	:left 0 
-	:bottom 0 
-	:right 0
-	:color white
-	:font-size 16px
-	:font-family 'Georgia'
-	p 
-		:line-height 28px
-	+display-for(lg md)
-		:padding 0px 15px
-		:height 80%
-		p 
-			:line-height 18px
-			:margin 0
-	+display-for(sm xs)
-		:padding 0 15px
-		:height 90%
-	a 
-		:color white
-		:font-weight bold
-		:word-break break-all
-		:display inline-block
 
-	p 
-		:align-self center
-		:font-size 18px
-		+display-for(lg)
-			:font-size 16px
-			:line-height 1.2
-		+display-for(md)
-			:font-size 14px
-			:line-height 1.2
-		+display-for(sm)
-			:font-size 16px
-			:line-height 1.8			
-		+display-for(xs)
-			:font-size 13px
-			:line-height 1.3
-		
-.square
-	:position relative
-	// :width 20%
-	:border 2px solid black
-.square:after
-	:content ""
-	:display block
-	:padding-bottom 100%
 
-//FACEBOOK
-.facebook
-	:background $lightgrey
-	.wrapper--flex
-		:align-items flex-start
-	.col--two
-		:width 46%
-		+display-for(sm xs)
-			:width 100% 
-	img
-		:max-width 100% 
-		:height 300px
-		:object-fit cover
-		+display-for(md sm xs)
-			:height 200px		
-	a
-		:color #111
-		&:hover
-			:color $gold
-	p 
-		:margin-bottom 0
-		:word-break break-all
 
-//CONTACT
-.contact 
-	:background-color white
-	:background $gold
-	:padding 0
-	.wrapper--flex
-		:align-items stretch
-	.contact--info 
-		:text-align center
-		:padding 80px 0
-		p
-			:margin 0 0 8px 0
-		div:first-of-type
-			:margin-bottom 30px
-	.contact--map
-		:background image-url('map-with-marker.png') center
-		:background-size cover	
-		:position relative
-		+display-for(sm xs)
-			:height 400px
-		a 
-			:position absolute
-			:top 0 
-			:left 0
-			:height 100%
-			:width 100%
+// //CONTACT
+// .contact 
+// 	:background-color white
+// 	:background $gold
+// 	:padding 0
+// 	.wrapper--flex
+// 		:align-items stretch
+// 	.contact--info 
+// 		:text-align center
+// 		:padding 80px 0
+// 		p
+// 			:margin 0 0 8px 0
+// 		div:first-of-type
+// 			:margin-bottom 30px
+// 	.contact--map
+// 		:background image-url('map-with-marker.png') center
+// 		:background-size cover	
+// 		:position relative
+// 		+display-for(sm xs)
+// 			:height 400px
+// 		a 
+// 			:position absolute
+// 			:top 0 
+// 			:left 0
+// 			:height 100%
+// 			:width 100%
 
 .request
 	:background-color white			
@@ -788,38 +643,67 @@ section.social
 				:padding 0
 //FOOTER
 footer
-	:background $purple
-	:color white
+	:background #F0EFEF
+	:color #231F1F
 	:padding 18px 0	
-	.logo-footer
-		:width 80px
-		:margin-right 30px
+	:margin-top 75px
+	h2
+		:font-size 2.7rem
+		:color #EF0612
+		:margin 0
 	h3 
-		:font-size 2rem
+		:font-size 1.7rem
 		:margin 0 0 12px
-	p 
-		:font-family $hl-font
-		:font-size 1.2rem
-		:line-height 1.8rem		
-	div 
-		:width calc(80% - 110px)
-		+display-for(sm xs)
-			:width calc(100% - 110px)				
-	div.social-links
-		:width 20%	
-		:text-align right
-		+display-for(sm xs)
-			:width calc(100% - 110px)
-			:margin-left 110px
-			:text-align left
-		a 
-			:color white
-			:font-size 2rem
-			:margin-right 16px
-		a:hover 
-			:color $gold	
-		a:last-of-type
-			:margin-right 0	
+		:text-transform uppercase
+	a 
+		:color $red
+		:font-weight bold
+		:text-decoration none
+	ul 
+		:list-style none
+		:padding 0
+	.social-icons
+		li
+			:display inline-block
+			:margin-right 10px
+			a 
+				:width 30px
+				:height 30px
+				:border 2px solid $red
+				:border-radius 50%
+				:display inline-block
+				:text-align center
+				i 
+					:line-height 27px 
+					.fa 
+						:display inline-block
+	.credits
+		p 
+			:font-size 0.9rem
+
+	.main-area
+		:border-bottom 2px solid white
+		:margin-top 45px
+		:padding-bottom 45px	
+	// div 
+	// 	:width calc(80% - 110px)
+	// 	+display-for(sm xs)
+	// 		:width calc(100% - 110px)				
+	// div.social-links
+	// 	:width 20%	
+	// 	:text-align right
+	// 	+display-for(sm xs)
+	// 		:width calc(100% - 110px)
+	// 		:margin-left 110px
+	// 		:text-align left
+	// 	a 
+	// 		:color white
+	// 		:font-size 2rem
+	// 		:margin-right 16px
+	// 	a:hover 
+	// 		:color $pink	
+	// 	a:last-of-type
+	// 		:margin-right 0	
 			
 
 

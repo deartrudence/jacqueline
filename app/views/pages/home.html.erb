@@ -1,23 +1,20 @@
-<div class="wrapper">
 	this is home
 	<div class="box-header">
 		<p class="tagline">The Crazy Plate Lady</p>
 		<%= image_tag 'handlettering.png'%>
 	</div>
 
-	<div class="wrapper--flex plates">
+	<section class="wrapper--flex plates">
 		<div class="col--two">
 			
 		</div>
 		<div class="col--two">
 			<div class="subtitle">
 				<h2 class="text-right">Plates</h2>
-				<h3>Featured Work</h3>
+				<h3>featured work</h3>
 			</div>
 		</div>
-	<!-- </div> -->
 
-	<!-- <div class="wrapper--flex"> -->
 		<div class="col--two">
 		  <%= image_tag 'art_02', class: 'plate'%>
 		  <%= image_tag 'art_06', class: 'plate'%>
@@ -28,31 +25,29 @@
 		  <%= image_tag 'art_03', class: 'plate'%>
 		  <%= image_tag 'art_05', class: 'plate'%>
 		</div>
-	</div>
+	</section>
 
-	<div class="wrapper--flex biography">
+	<section class="wrapper--flex biography">
 		<div class="col--two">
 			<div class="subtitle">
 				<h2>Biography</h2>
-				<h3 class="text-right">About Me</h3>
+				<h3 class="text-right">about me</h3>
 			</div>
 		</div>
 		<div class="col--two">
 		</div>
 		<div class="col--two">
-			<div class="box-with-after"><%= image_tag 'portrait.jpg'%></div> 
+			<div class="box-with-after box-with-after-pink"><%= image_tag 'portrait.jpg'%></div> 
 		</div>
 		<div class="col--two">
-			<h2>Jacqueline Poirier</h2>
+			<h2 class="jax">jacqueline poirier</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel cum, quos, aperiam temporibus distinctio unde dolorem in quam ducimus blanditiis non modi nulla quo, numquam nobis dignissimos obcaecati enim sint.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quaerat provident, laudantium quo optio omnis hic exercitationem molestias quia nam maxime nemo laborum quasi molestiae, ducimus. Praesentium animi assumenda totam molestiae, officiis voluptas nihil commodi quas quaerat quibusdam, dolores itaque repudiandae ipsum veniam, cupiditate sequi.</p>
-		</div>
-	</div>
-
-	<div class="wrapper--flex workshops">
-		<div class="col--two">
 			
 		</div>
+	</section>
+
+	<section class="wrapper--flex workshops">
+		<div class="col--two"></div>
 		<div class="col--two">
 			<div class="subtitle">
 				<h2 class="text-right">Workshops</h2>
@@ -61,8 +56,8 @@
 		</div>
 		<div class="col--two workshop">
 		  <%= image_tag 'paint_04.jpg', class: 'img1'%>
-		  <div class="box-with-after box2">
-		  	<div class="col--two">
+		  <div class="box-with-after event-box">
+		  	<div class="col--two-no-margin">
 			  	<h2>JAN</h2>
 			  	<h3 class="text-right">25/17</h3>
 		  	</div>
@@ -70,8 +65,8 @@
 		  </div>
 		</div>
 		<div class="col--two workshop">
-		  <div class="box-with-after box-with-after-reverse box1">
-		  	<div class="col--two">
+		  <div class="box-with-after box-with-after-reverse event-box">
+		  	<div class="col--two-no-margin">
 		  		<h2>FEB</h2>
 		  		<h3 class="text-right">07/17</h3>
 		  	</div>
@@ -79,56 +74,53 @@
 		  </div>
 		  <%= image_tag 'paint_02.jpg', class: 'img2'%>
 		</div>
-	</div>
+	</section>
 
-	<div class="wrapper--flex press">
+	<section class="wrapper--flex press">
 		<div class="col--two">
 			<div class="subtitle">
 				<h2>Press</h2>
-				<h3 class="text-right">Most Recent Press</h3>
+				<h3 class="text-right">most recent press</h3>
 			</div>
 		</div>
-		<div class="col--two">
-		</div>
+		<div class="col--two"></div>
 		<div class="wrapper--flex-reverse press">
-			<div class="col--two">
+			<div class="col--two-no-margin">
 				<div class="subtitle-sub">
 					<h3 class="text-right">Notable Awards</h3>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia quo, veritatis repellat perspiciatis ullam vero eum minus, tempora molestias reiciendis excepturi suscipit aut nisi!</p>
 			</div>
-			<div class="col--two">
-				<div class="box-with-after box-with-after-reverse"><%= image_tag 'notable-winner.jpg'%></div>
+			<div class="col--two-no-margin">
+				<div class="box-with-after box-with-after-reverse box-with-after-pink"><%= image_tag 'notable-winner.jpg'%></div>
 			</div>
-			
-		</div>	
+		</div>
+
 		<div class="wrapper--flex press">
-			
-			<div class="col--two">
+			<div class="col--two-no-margin">
 				<div class="subtitle-sub">
 					<h3>Morgan Freeman</h3>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium sint quia aliquid deserunt molestiae ipsum quam, quasi autem eum porro ratione sit exercitationem, delectus!</p>
 			</div>
-			<div class="col--two">
-				<div class="box-with-after box-with-after-upper"><%= image_tag 'morganfreeman.jpg'%></div>
+			<div class="col--two-no-margin">
+				<div class="box-with-after box-with-after-upper box-with-after-pink"><%= image_tag 'morganfreeman.jpg'%></div>
 			</div>
 		</div>
 
 		<div class="wrapper--flex-reverse">
-			<div class="col--two">
+			<div class="col--two-no-margin">
 				<div class="subtitle-sub">
 					<h3 class="text-right">The Chic Canuck</h3>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officia quo, veritatis repellat perspiciatis ullam vero eum minus, tempora molestias reiciendis excepturi suscipit aut nisi!</p>
 			</div>
-			<div class="col--two">
-				<div class="box-with-after box-with-after-reverse"><%= image_tag 'press2.jpg'%></div>
+			<div class="col--two-no-margin">
+				<div class="box-with-after box-with-after-reverse box-with-after-pink"><%= image_tag 'press2.jpg'%></div>
 			</div>	
-			
 		</div>
+	</section>
 
-</div>
 
 <script>
 	$('.box-with-after').after('<img src="<%= image_url('portrait.jpg') %>"')
