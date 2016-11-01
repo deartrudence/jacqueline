@@ -320,7 +320,7 @@ a
 
 
 nav 
-	:padding 12px 0
+	:padding 50px 0
 	// :position fixed
 	:width 100%
 	:z-index 1000
@@ -336,6 +336,7 @@ nav
 			:width 80% !important		
 	.menu--main
 		:z-index 10000
+		:margin-top 15px
 		+display-for(md sm xs)
 			:display none	
 	
@@ -363,6 +364,7 @@ nav
 			:font-family $title-font
 			:text-transform uppercase
 			:letter-spacing 0.8px
+			:font-size 1.9rem
 			+display-for(md sm xs)
 				:padding 20px
 				:display block
@@ -418,7 +420,10 @@ nav
 
 //FOOTER
 footer
-	:background #F0EFEF
+	:background-color #F0EFEF
+	:background-image image-url('footer_bg_handlettering.png')
+	:background-repeat no-repeat
+	:background-position center
 	:color #231F1F
 	:padding 18px 0	
 	:margin-top 75px
