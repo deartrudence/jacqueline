@@ -1,0 +1,1929 @@
+@media screen and (min-width: 1170px) {
+  /* line 16, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 16, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 16, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 16, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 480px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 16, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+/* line 75, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper--flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+/* line 80, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper--flex-reverse {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+/* line 85, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper--flex-column {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+}
+
+/* line 91, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper .col--two, .wrapper--flex .col--two, .wrapper--flex-column .col--two {
+  box-sizing: border-box;
+  width: 48.5%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 91, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--two, .wrapper--flex .col--two, .wrapper--flex-column .col--two {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 91, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--two, .wrapper--flex .col--two, .wrapper--flex-column .col--two {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 95, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper .col--two-no-margin, .wrapper--flex .col--two-no-margin, .wrapper--flex-column .col--two-no-margin {
+  box-sizing: border-box;
+  width: 50%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 95, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--two-no-margin, .wrapper--flex .col--two-no-margin, .wrapper--flex-column .col--two-no-margin {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 95, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--two-no-margin, .wrapper--flex .col--two-no-margin, .wrapper--flex-column .col--two-no-margin {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 99, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper .col--three, .wrapper--flex .col--three, .wrapper--flex-column .col--three {
+  box-sizing: border-box;
+  width: 32.5%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 99, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--three, .wrapper--flex .col--three, .wrapper--flex-column .col--three {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 99, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--three, .wrapper--flex .col--three, .wrapper--flex-column .col--three {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 103, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper .col--four, .wrapper--flex .col--four, .wrapper--flex-column .col--four {
+  box-sizing: border-box;
+  width: 25%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 103, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--four, .wrapper--flex .col--four, .wrapper--flex-column .col--four {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 103, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--four, .wrapper--flex .col--four, .wrapper--flex-column .col--four {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 109, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper .col--five, .wrapper--flex .col--five, .wrapper--flex-column .col--five {
+  box-sizing: border-box;
+  width: 20%;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 109, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five, .wrapper--flex-column .col--five {
+    box-sizing: border-box;
+    width: 33.325%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 109, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five, .wrapper--flex-column .col--five {
+    box-sizing: border-box;
+    width: 33.325%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 109, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five, .wrapper--flex-column .col--five {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+
+/* line 120, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 120, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 120, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 120, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  html {
+    font-size: 8px;
+  }
+}
+
+/* line 125, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 127, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.7;
+  letter-spacing: 2.5px;
+  margin: 0;
+}
+
+/* line 133, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+img {
+  width: 100%;
+}
+
+/* line 136, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.plates {
+  margin-top: 4%;
+}
+
+/* line 141, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.text-right {
+  text-align: right;
+}
+
+/* line 143, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.subtitle {
+  margin-bottom: 65px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 143, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .subtitle {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 143, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .subtitle {
+    margin-bottom: 15px;
+  }
+}
+/* line 147, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.subtitle h2 {
+  border-bottom: 3px solid #231F1F;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  font-size: 6rem;
+}
+/* line 152, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.subtitle h3 {
+  font-size: 2.4rem;
+  margin: 20px 0;
+  color: #99A19F;
+}
+
+/* line 157, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.subtitle-sub h3 {
+  font-size: 3.5rem;
+  width: 101%;
+  padding: 20px 0;
+  border-bottom: 2px solid #231F1F;
+}
+
+/* line 163, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.home-plates {
+  min-height: 500px;
+}
+
+/* line 166, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-header {
+  height: 550px;
+  background-color: #f3f3f3;
+  position: relative;
+}
+/* line 170, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-header:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 5px solid white;
+}
+/* line 179, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-header .tagline {
+  position: absolute;
+  text-transform: uppercase;
+  left: 50%;
+  top: 26px;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  color: white;
+  background-color: #f3f3f3;
+  z-index: 10;
+}
+/* line 189, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-header img {
+  position: absolute;
+  z-index: 100;
+  top: 5%;
+}
+
+/* line 193, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.plate {
+  margin-bottom: 5.5%;
+}
+
+/* line 195, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.event-box {
+  width: 90%;
+  background-color: #FCECE6;
+}
+
+/* line 199, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after {
+  max-width: 90%;
+  position: relative;
+  margin-bottom: 15.5%;
+}
+
+/* line 204, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after:after {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #B8B8B8;
+  position: absolute;
+  right: -10%;
+  bottom: -10%;
+  z-index: -10;
+}
+/* line 214, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after-reverse {
+  margin-left: auto;
+  margin-bottom: 15.5%;
+}
+/* line 217, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after-reverse:after {
+  right: 10%;
+}
+/* line 219, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after-upper {
+  margin-left: auto;
+}
+/* line 221, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after-upper:after {
+  right: 10%;
+  top: -10%;
+}
+/* line 225, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after-pink:after {
+  border: 3px solid #FCECE6;
+}
+
+/* line 230, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.biography h2.jax {
+  font-size: 7.1rem;
+  line-height: 1.1;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+/* line 235, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.biography p {
+  font-size: 2rem;
+}
+
+/* line 240, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop .col--two-no-margin {
+  padding: 10px 0 10px 40px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 240, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .workshop .col--two-no-margin {
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 240, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .workshop .col--two-no-margin {
+    padding: 10px 40px;
+  }
+}
+/* line 244, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop .col--two-no-margin h2 {
+  color: #58595B;
+  border-bottom: 3px solid #B8B8B8;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  font-size: 4.3rem;
+}
+/* line 250, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop .col--two-no-margin h3 {
+  color: #58595B;
+  margin-top: 10px;
+  font-size: 2.5rem;
+}
+/* line 254, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop p {
+  padding: 0 40px 40px 40px;
+  font-size: 2.7rem;
+  color: #58595B;
+}
+/* line 258, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop .img1 {
+  margin-bottom: 20px;
+}
+/* line 260, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop .img2 {
+  margin-top: 20px;
+}
+
+/* line 265, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.press p {
+  padding: 0 40px 40px 40px;
+  font-size: 2.5rem;
+  color: #58595B;
+}
+
+/* line 274, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact h3.area {
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}
+/* line 277, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact p {
+  padding-right: 60px;
+}
+/* line 279, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 50px;
+}
+/* line 283, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact ul li {
+  margin-bottom: 5px;
+}
+/* line 285, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact ul a {
+  color: #EF0612;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 290, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 15px;
+  border: 3px solid #FCECE6;
+  margin-bottom: 27px;
+}
+/* line 295, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact .submitButton {
+  margin-bottom: 0;
+}
+
+/* line 304, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+h2, h3, h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+}
+
+/* line 322, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+a {
+  transition: 0.3s all ease;
+}
+
+/* line 326, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav {
+  padding: 50px 0;
+  width: 100%;
+  z-index: 1000;
+}
+/* line 331, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav img {
+  width: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 333, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 333, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 333, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 338, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav a.col--two {
+    width: 80% !important;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 338, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav a.col--two {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 338, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav a.col--two {
+    width: 80% !important;
+  }
+}
+/* line 341, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav .menu--main {
+  z-index: 10000;
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 341, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 341, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 341, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+    margin-top: 50px;
+  }
+}
+/* line 348, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 348, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: white;
+    top: 55px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 40px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 348, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: white;
+    top: 55px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 40px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 348, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: white;
+    top: 55px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 40px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 362, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 362, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 362, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 366, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav ul a {
+  text-decoration: none;
+  color: #EF0612;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 366, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 20px;
+    display: block;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 366, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 20px;
+    display: block;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 366, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 20px;
+    display: block;
+  }
+}
+/* line 376, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav ul a:hover {
+  color: #FCECE6;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 376, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #FCECE6;
+    color: white;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 376, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #FCECE6;
+    color: white;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 376, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #FCECE6;
+    color: white;
+  }
+}
+/* line 381, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav .main--toggle {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 381, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 389, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    transform: translate3d(0, -1px, 0);
+  }
+  /* line 391, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    transform: translate3d(0, 1px, 0);
+  }
+  /* line 393, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #EF0612;
+    display: block;
+    margin-top: 6px;
+    transition: all 0.3s;
+  }
+  /* line 402, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: #EF0612;
+    transition: all 0.3s;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 381, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 389, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    transform: translate3d(0, -1px, 0);
+  }
+  /* line 391, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    transform: translate3d(0, 1px, 0);
+  }
+  /* line 393, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #EF0612;
+    display: block;
+    margin-top: 6px;
+    transition: all 0.3s;
+  }
+  /* line 402, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: #EF0612;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 381, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 389, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    transform: translate3d(0, -1px, 0);
+  }
+  /* line 391, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    transform: translate3d(0, 1px, 0);
+  }
+  /* line 393, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #EF0612;
+    display: block;
+    margin-top: 6px;
+    transition: all 0.3s;
+  }
+  /* line 402, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: #EF0612;
+    transition: all 0.3s;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 409, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 412, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 417, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 421, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 409, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 412, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 417, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 421, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 409, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 412, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 417, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 421, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+
+/* line 427, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer {
+  background-color: #F0EFEF;
+  background-image: url(/assets/footer_bg_handlettering-5a55b9ac3587cf749a23e37a8f886176b532794e70ead21bc3dffbdeab465d5e.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #231F1F;
+  padding: 18px 0;
+  margin-top: 75px;
+}
+/* line 435, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer h2 {
+  font-size: 2.7rem;
+  color: #EF0612;
+  margin: 0;
+}
+/* line 439, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer h3.title {
+  font-size: 1.7rem;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+/* line 443, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer a {
+  color: #EF0612;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 447, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 451, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 454, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .social-icons li a {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #EF0612;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+/* line 461, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .social-icons li a i {
+  line-height: 27px;
+}
+/* line 463, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .social-icons li a i .fa {
+  display: inline-block;
+}
+/* line 466, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .credits p {
+  font-size: 0.9rem;
+}
+/* line 469, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .main-area {
+  border-bottom: 2px solid white;
+  margin-top: 45px;
+  padding-bottom: 45px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+@media screen and (min-width: 1170px) {
+  /* line 16, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 16, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 16, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 16, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 480px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 16, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 66, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+/* line 75, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper--flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+/* line 80, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper--flex-reverse {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+/* line 85, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper--flex-column {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+}
+
+/* line 91, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper .col--two, .wrapper--flex .col--two, .wrapper--flex-column .col--two {
+  box-sizing: border-box;
+  width: 48.5%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 91, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--two, .wrapper--flex .col--two, .wrapper--flex-column .col--two {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 91, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--two, .wrapper--flex .col--two, .wrapper--flex-column .col--two {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 95, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper .col--two-no-margin, .wrapper--flex .col--two-no-margin, .wrapper--flex-column .col--two-no-margin {
+  box-sizing: border-box;
+  width: 50%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 95, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--two-no-margin, .wrapper--flex .col--two-no-margin, .wrapper--flex-column .col--two-no-margin {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 95, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--two-no-margin, .wrapper--flex .col--two-no-margin, .wrapper--flex-column .col--two-no-margin {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 99, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper .col--three, .wrapper--flex .col--three, .wrapper--flex-column .col--three {
+  box-sizing: border-box;
+  width: 32.5%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 99, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--three, .wrapper--flex .col--three, .wrapper--flex-column .col--three {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 99, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--three, .wrapper--flex .col--three, .wrapper--flex-column .col--three {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 103, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper .col--four, .wrapper--flex .col--four, .wrapper--flex-column .col--four {
+  box-sizing: border-box;
+  width: 25%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 103, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--four, .wrapper--flex .col--four, .wrapper--flex-column .col--four {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 103, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--four, .wrapper--flex .col--four, .wrapper--flex-column .col--four {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 109, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.wrapper .col--five, .wrapper--flex .col--five, .wrapper--flex-column .col--five {
+  box-sizing: border-box;
+  width: 20%;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 109, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five, .wrapper--flex-column .col--five {
+    box-sizing: border-box;
+    width: 33.325%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 109, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five, .wrapper--flex-column .col--five {
+    box-sizing: border-box;
+    width: 33.325%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 109, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five, .wrapper--flex-column .col--five {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+
+/* line 120, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 120, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 120, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 120, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  html {
+    font-size: 8px;
+  }
+}
+
+/* line 125, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 127, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.7;
+  letter-spacing: 2.5px;
+  margin: 0;
+}
+
+/* line 133, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+img {
+  width: 100%;
+}
+
+/* line 136, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.plates {
+  margin-top: 4%;
+}
+
+/* line 141, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.text-right {
+  text-align: right;
+}
+
+/* line 143, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.subtitle {
+  margin-bottom: 65px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 143, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .subtitle {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 143, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .subtitle {
+    margin-bottom: 15px;
+  }
+}
+/* line 147, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.subtitle h2 {
+  border-bottom: 3px solid #231F1F;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  font-size: 6rem;
+}
+/* line 152, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.subtitle h3 {
+  font-size: 2.4rem;
+  margin: 20px 0;
+  color: #99A19F;
+}
+
+/* line 157, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.subtitle-sub h3 {
+  font-size: 3.5rem;
+  width: 101%;
+  padding: 20px 0;
+  border-bottom: 2px solid #231F1F;
+}
+
+/* line 163, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.home-plates {
+  min-height: 500px;
+}
+
+/* line 166, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-header {
+  height: 550px;
+  background-color: #f3f3f3;
+  position: relative;
+}
+/* line 170, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-header:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 5px solid white;
+}
+/* line 179, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-header .tagline {
+  position: absolute;
+  text-transform: uppercase;
+  left: 50%;
+  top: 26px;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  color: white;
+  background-color: #f3f3f3;
+  z-index: 10;
+}
+/* line 189, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-header img {
+  position: absolute;
+  z-index: 100;
+  top: 5%;
+}
+
+/* line 193, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.plate {
+  margin-bottom: 5.5%;
+}
+
+/* line 195, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.event-box {
+  width: 90%;
+  background-color: #FCECE6;
+}
+
+/* line 199, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after {
+  max-width: 90%;
+  position: relative;
+  margin-bottom: 15.5%;
+}
+
+/* line 204, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after:after {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #B8B8B8;
+  position: absolute;
+  right: -10%;
+  bottom: -10%;
+  z-index: -10;
+}
+/* line 214, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after-reverse {
+  margin-left: auto;
+  margin-bottom: 15.5%;
+}
+/* line 217, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after-reverse:after {
+  right: 10%;
+}
+/* line 219, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after-upper {
+  margin-left: auto;
+}
+/* line 221, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after-upper:after {
+  right: 10%;
+  top: -10%;
+}
+/* line 225, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.box-with-after-pink:after {
+  border: 3px solid #FCECE6;
+}
+
+/* line 230, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.biography h2.jax {
+  font-size: 7.1rem;
+  line-height: 1.1;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+/* line 235, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.biography p {
+  font-size: 2rem;
+}
+
+/* line 240, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop .col--two-no-margin {
+  padding: 10px 0 10px 40px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 240, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .workshop .col--two-no-margin {
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 240, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  .workshop .col--two-no-margin {
+    padding: 10px 40px;
+  }
+}
+/* line 244, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop .col--two-no-margin h2 {
+  color: #58595B;
+  border-bottom: 3px solid #B8B8B8;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  font-size: 4.3rem;
+}
+/* line 250, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop .col--two-no-margin h3 {
+  color: #58595B;
+  margin-top: 10px;
+  font-size: 2.5rem;
+}
+/* line 254, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop p {
+  padding: 0 40px 40px 40px;
+  font-size: 2.7rem;
+  color: #58595B;
+}
+/* line 258, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop .img1 {
+  margin-bottom: 20px;
+}
+/* line 260, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.workshop .img2 {
+  margin-top: 20px;
+}
+
+/* line 265, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.press p {
+  padding: 0 40px 40px 40px;
+  font-size: 2.5rem;
+  color: #58595B;
+}
+
+/* line 274, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact h3.area {
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}
+/* line 277, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact p {
+  padding-right: 60px;
+}
+/* line 279, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 50px;
+}
+/* line 283, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact ul li {
+  margin-bottom: 5px;
+}
+/* line 285, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact ul a {
+  color: #EF0612;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 290, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 15px;
+  border: 3px solid #FCECE6;
+  margin-bottom: 27px;
+}
+/* line 295, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+.contact .submitButton {
+  margin-bottom: 0;
+}
+
+/* line 304, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+h2, h3, h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+}
+
+/* line 322, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+a {
+  transition: 0.3s all ease;
+}
+
+/* line 326, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav {
+  padding: 50px 0;
+  width: 100%;
+  z-index: 1000;
+}
+/* line 331, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav img {
+  width: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 333, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 333, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 333, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 338, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav a.col--two {
+    width: 80% !important;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 338, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav a.col--two {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 338, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav a.col--two {
+    width: 80% !important;
+  }
+}
+/* line 341, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav .menu--main {
+  z-index: 10000;
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 341, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 341, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 341, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+    margin-top: 50px;
+  }
+}
+/* line 348, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 348, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: white;
+    top: 55px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 40px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 348, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: white;
+    top: 55px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 40px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 348, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: white;
+    top: 55px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 40px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 362, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 362, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 362, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 366, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav ul a {
+  text-decoration: none;
+  color: #EF0612;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 366, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 20px;
+    display: block;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 366, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 20px;
+    display: block;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 366, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 20px;
+    display: block;
+  }
+}
+/* line 376, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav ul a:hover {
+  color: #FCECE6;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 376, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #FCECE6;
+    color: white;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 376, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #FCECE6;
+    color: white;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 376, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #FCECE6;
+    color: white;
+  }
+}
+/* line 381, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+nav .main--toggle {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 381, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 389, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    transform: translate3d(0, -1px, 0);
+  }
+  /* line 391, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    transform: translate3d(0, 1px, 0);
+  }
+  /* line 393, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #EF0612;
+    display: block;
+    margin-top: 6px;
+    transition: all 0.3s;
+  }
+  /* line 402, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: #EF0612;
+    transition: all 0.3s;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 381, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 389, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    transform: translate3d(0, -1px, 0);
+  }
+  /* line 391, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    transform: translate3d(0, 1px, 0);
+  }
+  /* line 393, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #EF0612;
+    display: block;
+    margin-top: 6px;
+    transition: all 0.3s;
+  }
+  /* line 402, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: #EF0612;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 381, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 389, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    transform: translate3d(0, -1px, 0);
+  }
+  /* line 391, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    transform: translate3d(0, 1px, 0);
+  }
+  /* line 393, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #EF0612;
+    display: block;
+    margin-top: 6px;
+    transition: all 0.3s;
+  }
+  /* line 402, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: #EF0612;
+    transition: all 0.3s;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 409, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 412, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 417, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 421, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 409, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 412, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 417, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 421, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 409, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 412, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 417, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 421, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+
+/* line 427, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer {
+  background-color: #F0EFEF;
+  background-image: url(/assets/footer_bg_handlettering-5a55b9ac3587cf749a23e37a8f886176b532794e70ead21bc3dffbdeab465d5e.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #231F1F;
+  padding: 18px 0;
+  margin-top: 75px;
+}
+/* line 435, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer h2 {
+  font-size: 2.7rem;
+  color: #EF0612;
+  margin: 0;
+}
+/* line 439, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer h3.title {
+  font-size: 1.7rem;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+/* line 443, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer a {
+  color: #EF0612;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 447, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 451, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 454, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .social-icons li a {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #EF0612;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+/* line 461, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .social-icons li a i {
+  line-height: 27px;
+}
+/* line 463, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .social-icons li a i .fa {
+  display: inline-block;
+}
+/* line 466, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .credits p {
+  font-size: 0.9rem;
+}
+/* line 469, /Users/trudy/Code/jacqueline/app/assets/stylesheets/home.sass */
+footer .main-area {
+  border-bottom: 2px solid white;
+  margin-top: 45px;
+  padding-bottom: 45px;
+}
+
+/* line 19, /Users/trudy/Code/jacqueline/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
