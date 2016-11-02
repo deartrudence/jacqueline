@@ -132,14 +132,16 @@ body
 	:margin 0
 img 
 	:width 100%
-
-.plates
-	:margin-top 4%
-.biography, .workshops, .press, .contact
-	// :margin-top 3%
+a 
+	:transition 0.3s all ease	
+h1, h2, h3
+	:font-weight normal
 
 .text-right
 	:text-align right
+
+
+// all secondary titles (ie Plates, Biography etc)
 .subtitle
 	:margin-bottom 65px
 	+display-for(sm xs)
@@ -160,169 +162,7 @@ img
 		:padding 20px 0
 		:border-bottom 2px solid $darkgrey	
 
-.home-plates
-	:min-height 500px
-
-.box-header
-	:height 550px
-	:background-color #f3f3f3
-	:position relative
-	&:before
-		:content ' '
-		:position absolute
-		:z-index 1
-		:top 40px
-		:left 40px
-		:right 40px
-		:bottom 40px
-		:border 5px solid white
-	.tagline
-		:position absolute
-		:text-transform uppercase
-		:left 50%
-		:top 26px
-		:transform translate(-50%, -50%)
-		:padding 0 20px
-		:color white
-		:background-color #f3f3f3
-		:z-index 10
-	img
-		:position absolute
-		:z-index 100
-		:top 5%
-.plate
-	:margin-bottom 5.5%
-.event-box
-	:width 90%
-	:background-color $pink
-
-.box-with-after
-	:max-width 90%
-	:position relative
-	:margin-bottom 15.5%
-.box-with-after
-	&:after
-		:content ' '
-		:display block
-		:height 100%
-		:width 100%
-		:border 2px solid $lightgrey2
-		:position absolute
-		:right -10%
-		:bottom -10%
-		:z-index -10
-	&-reverse
-		:margin-left auto
-		:margin-bottom 15.5%
-		&:after
-			:right 10%
-	&-upper
-		:margin-left auto
-		&:after
-			:right 10%
-			:top -10%
-	&-pink
-		&:after
-			:border 3px solid $pink
-
-//BIOGRAPHY
-.biography
-	h2.jax
-		:font-size 7.1rem
-		:line-height 1.1
-		:letter-spacing 5px
-		:margin-bottom 10px
-	p 
-		:font-size 2rem
-
-//WORKSHOPS
-.workshop
-	.col--two-no-margin
-		:padding 10px 0 10px 40px
-		+display-for(sm xs)
-			:padding 10px 40px
-		h2
-			:color $darkgrey2
-			:border-bottom 3px solid $lightgrey2
-			:margin-bottom 0
-			:padding-bottom 10px
-			:font-size 4.3rem
-		h3
-			:color $darkgrey2
-			:margin-top 10px
-			:font-size 2.5rem
-	p 
-		:padding 0 40px 40px 40px
-		:font-size 2.7rem
-		:color $darkgrey2
-	.img1
-		:margin-bottom 20px
-	.img2
-		:margin-top 20px
-
-//PRESS
-.press
-	p 
-		:padding 0 40px 40px 40px
-		:font-size 2.5rem
-		// :letter-spacing 1.5px
-		// :line-height 1.3
-		:color $darkgrey2	
-
-//CONTACT
-.contact
-	h3.area
-		:font-size 2.7rem	
-		:text-transform uppercase
-	p 
-		:padding-right 60px
-	ul
-		:list-style none
-		:padding 0
-		:padding-top 50px
-		li 
-			:margin-bottom 5px
-		a 
-			:color $red
-			:text-decoration none
-			:font-weight bold
-
-	input, textarea
-		:width 100%	
-		:padding 15px
-		:border 3px solid $pink
-		:margin-bottom 27px
-	.submitButton
-		:margin-bottom 0
-// ===================================
-// section
-// 	:padding 140px 0	
-// 	+display-for(sm xs)
-// 		:padding 80px 0				
-
-//fonts stuff			
-h2, h3, h4 
-	:font-family $title-font
-	:font-weight normal
-// h2 
-// 	:font-size 4rem	
-// 	:line-height 4.4rem	
-// 	+display-for(xs)
-// 		:font-size 3.2rem
-// 		:line-height 3.8rem
-// h3 
-// 	:font-size 2.4rem	
-// 	:line-height 2.8rem
-// 	+display-for(xs)
-// 		:font-size 2.2rem
-// 		:line-height 2.4rem
-// h4 
-// 	:font-size 1.8rem	
-// 	:line-height 2rem
-a 
-	:transition 0.3s all ease	
-
-
+// NAVBAR
 nav 
 	:padding 50px 0
 	// :position fixed
@@ -423,7 +263,146 @@ nav
 				:width 22px
 				:height 2px
 
-//FOOTER
+// HEADER
+.box-header
+	:height 550px
+	:background-color #f3f3f3
+	:position relative
+	&:before
+		:content ' '
+		:position absolute
+		:z-index 1
+		:top 40px
+		:left 40px
+		:right 40px
+		:bottom 40px
+		:border 5px solid white
+	.tagline
+		:position absolute
+		:text-transform uppercase
+		:left 50%
+		:top 26px
+		:transform translate(-50%, -50%)
+		:padding 0 20px
+		:color white
+		:background-color #f3f3f3
+		:z-index 10
+	img
+		:position absolute
+		:z-index 100
+		:top 5%
+
+// PLATES
+.plates
+	:margin-top 4%
+.plate
+	:margin-bottom 5.5%
+
+
+// generic styles for all boxes with after border
+.box-with-after
+	:max-width 90%
+	:position relative
+	:margin-bottom 15.5%
+.box-with-after
+	&:after
+		:content ' '
+		:display block
+		:height 100%
+		:width 100%
+		:border 2px solid $lightgrey2
+		:position absolute
+		:right -10%
+		:bottom -10%
+		:z-index -10
+	&-reverse
+		:margin-left auto
+		:margin-bottom 15.5%
+		&:after
+			:right 10%
+	&-upper
+		:margin-left auto
+		&:after
+			:right 10%
+			:top -10%
+	&-pink
+		&:after
+			:border 3px solid $pink
+
+// BIOGRAPHY
+.biography
+	h2.jax
+		:font-size 7.1rem
+		:line-height 1.1
+		:letter-spacing 5px
+		:margin-bottom 10px
+	p 
+		:font-size 2rem
+
+// WORKSHOPS
+.event-box
+	:width 90%
+	:background-color $pink
+.workshop
+	.col--two-no-margin
+		:padding 10px 0 10px 40px
+		+display-for(sm xs)
+			:padding 10px 40px
+		h2
+			:color $darkgrey2
+			:border-bottom 3px solid $lightgrey2
+			:margin-bottom 0
+			:padding-bottom 10px
+			:font-size 4.3rem
+		h3
+			:color $darkgrey2
+			:margin-top 10px
+			:font-size 2.5rem
+	p 
+		:padding 0 40px 40px 40px
+		:font-size 2.7rem
+		:color $darkgrey2
+	.img1
+		:margin-bottom 20px
+	.img2
+		:margin-top 20px
+
+// PRESS
+.press
+	p 
+		:padding 0 40px 40px 40px
+		:font-size 2.5rem
+		// :letter-spacing 1.5px
+		// :line-height 1.3
+		:color $darkgrey2	
+
+// CONTACT
+.contact
+	h3.area
+		:font-size 2.7rem	
+		:text-transform uppercase
+	p 
+		:padding-right 60px
+	ul
+		:list-style none
+		:padding 0
+		:padding-top 50px
+		li 
+			:margin-bottom 5px
+		a 
+			:color $red
+			:text-decoration none
+			:font-weight bold
+
+	input, textarea
+		:width 100%	
+		:padding 15px
+		:border 3px solid $pink
+		:margin-bottom 27px
+	.submitButton
+		:margin-bottom 0
+			
+// FOOTER
 footer
 	:background-color #F0EFEF
 	:background-image image-url('footer_bg_handlettering.png')
