@@ -52,22 +52,20 @@
 				<li><a href="#"><i class="fa fa-twitter"></i> @thecrazyplatelady</a></li>
 			</ul>
 		</div>
+		<script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+
+
 		<div class="col--two">
 			<h3 class="area">Say Something</h3>
-			<form action="email" class="contactForm">
-				<div class="contactNameWrapper">
+			<form action="pages/send_email" id="contactForm">
 					<input type="text" name="name" class="contactName" placeholder="name" >
-				</div>
-				<div class="contactEmailWrapper">
-					<input type="email" name="email" class="contactEmail" placeholder="email" >
-				</div>
 
-				<div class="contactDescriptionWrapper">
+					<input type="email" name="email" class="contactEmail" placeholder="email" >
+
 					<textarea name="description" height="300px" placeholder="your message"></textarea>
-				</div>
-				<div class="submitButtonWrapper">
-					<input type="submit" value="Send Email" class="submitButton">
-				</div>
+					<input type="filepicker" data-fp-apikey="A1TJDqJ1qQPC1RoNX29piz"
+onchange="getFileInfo(event.fpfile.url)">
+					<input type="submit" value="Send Email" class="submitEmail">
 			</form>
 		</div>
 	</section>
@@ -108,6 +106,18 @@
 	</footer>
 
 	<script>
+		var emailInfo = {}
+
+		var getFileInfo = function(file_url){
+			console.log(file_url)
+			var input = document.createElement('input');
+			input.setAttribute("type","hidden");
+			input.setAttribute("name","fileInfo");
+			input.setAttribute("value", file_url);
+			document.getElementById('contactForm').appendChild(input);
+		}
+
+
 		var windowSize = $(window).innerWidth();
 		(function($,sr){
 		  var debounce = function (func, threshold, execAsap) {
